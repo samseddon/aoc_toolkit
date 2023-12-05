@@ -6,15 +6,17 @@
 ___
 AOC_2023/day_n/day_n.py
 
-###then git clone this repo when in directory AOC_2023 and add the following lines
-###to the top of your day_n.py code
+### then git clone this repo when in directory AOC_2023 and add the following lines
+### to the top of your day_n.py code
 
 ___
 
 import os                                                                         
-import sys                                                                        
-current_dir = os.path.dirname(os.path.abspath(__file__))# Get the parent directory by going one level up
-parent_dir = os.path.dirname(current_dir)# Add the parent directory to sys.path
+import sys
+### Get the parent directory by going one level up
+current_dir = os.path.dirname(os.path.abspath(__file__))
+### Add the parent directory to sys.path
+parent_dir = os.path.dirname(current_dir)
 sys.path.append(parent_dir)                                                    
 import aoc_toolkit.equations as aoc            
 
