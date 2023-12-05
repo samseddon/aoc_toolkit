@@ -1,13 +1,13 @@
-# This toolkit is designed by Sam Seddon and Alina Bendt, and designed to aide
-# common advent of code requirements. 
+### This toolkit is designed by Sam Seddon and Alina Bendt, and designed to aide
+### common advent of code requirements. 
 
-## Install
-# Assuming you have some directory structure like so 
+# Install
+### Assuming you have some directory structure like so 
 ___
 AOC_2023/day_n/day_n.py
 
-then git clone this repo when in directory AOC_2023 and add the following lines
-to the top of your day_n.py code
+###then git clone this repo when in directory AOC_2023 and add the following lines
+###to the top of your day_n.py code
 
 ___
 
