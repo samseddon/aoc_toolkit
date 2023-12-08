@@ -12,13 +12,21 @@ def line_dict(line, pattern):
 
     example returned dict 
     {'card': 1, 'winners': '41 48 83 86 17', 'hand': '81 87  9 41 27  4 48 52'}
+
+    lines for top of file:
+import os
+import sys
+### Get the parent directory by going one level up
+current_dir = os.path.dirname(os.path.abspath(__file__))
+### Add the parent directory to sys.path
+parent_dir = os.path.dirname(current_dir)
+uber_parent_dir = os.path.dirname(parent_dir)
+sys.path.append(uber_parent_dir)
+import aoc_toolkit.equations as aoc
     """
-    if line == "\n":
-        pass
-    else:
-        pattern = parse.compile(pattern)
-        match = pattern.search(line)                                               
-        return match.named            
+    pattern = parse.compile(pattern)
+    match = pattern.search(line)                                               
+    return match.named            
 
 
 def int_array(line_dict, key, delim = " "):
