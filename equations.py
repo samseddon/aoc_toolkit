@@ -1,4 +1,5 @@
 import parse
+import string
 
 def line_dict(line, pattern):                                                     
     """
@@ -44,3 +45,18 @@ def int_array(line_dict, key, delim = " "):
     return [int(x) \
             for x in line_dict[key].split(delim) \
             if len(x) > 0]
+
+
+
+def lowercase():
+    """
+    Don't judge, I just forget the commands all the time
+    """
+    return string.ascii_lowercase
+
+def dict_inverter(input_dict):
+    """
+    I've only just met her
+    {a:0, b:1} becomes {0:a, 1:b}
+    """
+    return {value:key for key, value in input_dict.items()}
